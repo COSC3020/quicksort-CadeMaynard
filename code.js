@@ -14,20 +14,7 @@ function quicksort(array) {
                     for(c = pivot; c <= b; c++)
                             array[c] = array[c + 1]
                     array[pivot] = temp;
-                } else if(array[b] == array[pivot]){    // From here...
-                    if(b > pivot) {
-                        temp = array[b];
-                        for(c = b; c > pivot; c--)
-                            array[c] = array[c - 1]
-                        array[pivot] = temp;
-                        pivot++;
-                    } else{
-                        temp = array[pivot];
-                        for(c = pivot; c < b; c--)
-                            array[c] = array[c - 1]
-                        array[b] = temp;
-                    }
-                }                                       // ...to here is completely optional, it just makes the function stable.
+                }                                       
             }
         }
     }
