@@ -1,6 +1,7 @@
 function quicksort(array) {
     /* New Idea: Everything is a pivot!*/
-    for(i = 0; i < array.length; i++){
+    i=0
+    while(i < array.length){
         pivot = i;
         for(b = 0; b < array.length; b++){
             if(b != pivot){
@@ -17,6 +18,8 @@ function quicksort(array) {
                 }                                       
             }
         }
+        if(pivot == i)
+            i++;
     }
     return array;
 }
