@@ -25,6 +25,8 @@ The $n-2$ is to account for the fact that after you have sorted the second to la
 
 Seeing as $j$ functions as a constant here we can ignore it which leaves us with a sum of a single value which is equivalent to a multiplication. Ignoring constants we can replace the sum with
 $$n(n-2)$$
-Again, we ignore constants and insert into the original equation we get:
-$$\Theta(n^3)$$
-While this is a poor runtime, seeing as Quicksort's regular worst case is $n^2$ and our version is in-place, it makes enough sense that it would be less efficient to this degree.
+If we distribute from this step and ignore constants we get:
+$$n^2-n)$$
+Then if we ignore lower-order terms we get:
+$$\Theta(n^2)$$
+This is quicksort's normal worst-case so this makes sense.
